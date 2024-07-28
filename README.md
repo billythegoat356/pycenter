@@ -43,6 +43,7 @@ Stats: https://pepy.tech/project/pystyle
   - Make boxes ✔️
   - Hide and Show Cursor ✔️
   - System Functions ✔️
+  - Clickable link ✔️
 
 <br>
 

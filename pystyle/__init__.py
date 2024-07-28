@@ -989,6 +989,24 @@ class Banner:
         return _arrow
 
 
+class Link:
+    """
+    1 functions:
+        create_link()         |             make clickable link 
+    """
+
+    def create_link(uri: str, label=None) -> str:
+        if label is None:
+            label = uri
+
+        parameters = ""
+
+        # OSC 8 ; params ; URI ST <name> OSC 8 ;; ST
+        escape_mask = "\033]8;{};{}\033\\{}\033]8;;\033\\"
+
+        return escape_mask.format(parameters, uri, label)
+
+
 Box = Banner
 
 System.Init()
