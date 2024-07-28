@@ -992,10 +992,10 @@ class Banner:
 class Link:
     """
     1 functions:
-        create_link()         |             make clickable link 
+        CreateLink()         |             make clickable link 
     """
 
-    def create_link(uri: str, label=None) -> str:
+    def CreateLink(uri: str, label=None) -> str:
         if label is None:
             label = uri
 
